@@ -1,0 +1,13 @@
+    mutating func reduce(_ currentState: TextSettings,
+                         _ action: TextModification) -> TextSettings {
+        
+        var newText = currentState
+        
+        switch action {
+        case .changeSize(let size):
+            newText.fontSize = size
+        var newState = currentState
+        
+        switch action {
+        case .changeMask(let mask):
+            newState.mask = mask
